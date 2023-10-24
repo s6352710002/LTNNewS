@@ -13,26 +13,293 @@
 
     <!-- css -->
     <link href="css\style.css" rel="stylesheet" />
+
+    <!-- javascript -->
+    <link rel="stylesheet" href="app.js" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
-    <!-- <h1>ลูกทุ่งเน็ตเวิร์กนิวส์ LTN NewS</h1> -->
-
-    <!-- ======= Header ======= -->
-    <nav>
+    <!-- Top Header Start -->
+    <div class="top-header">
       <div class="container">
-        <div class="nav-con">
-          <div class="logo">
-            <img src="assets/img/logo.png" class="img-fluid" alt="" width="200" height="200"/>
-            <a href="index.html"></a>
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-md-4">
+            <div class="logo">
+              <a href="">
+                <img
+                  src="assets\img\Logo-NETWORK today_s final-01.png"
+                  alt="Logo"
+                />
+              </a>
+            </div>
           </div>
-          <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          <div class="col-lg-6 col-md-4">
+            <div class="search">
+              <input type="text" placeholder="Search" />
+              <button><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="social">
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Header Start -->
+    <div class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+          <a href="#" class="navbar-brand">เมนู</a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarCollapse"
+          >
+            <div class="navbar-nav m-auto">
+              <a href="index.html" class="nav-item nav-link active">หน้าหลัก</a>
+              <a href="#" class="nav-item nav-link">ข่าว</a>
+              <a href="#" class="nav-item nav-link">พยากรณ์อากาศ</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                >
+                  Dropdown
+                </a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Sub Item 1</a>
+                  <a href="#" class="dropdown-item">Sub Item 2</a>
+                </div>
+              </div>
+              <a href="single-page.html" class="nav-item nav-link"
+                >นโยบายความเป็นส่วนตัว</a
+              >
+              <a href="contact.html" class="nav-item nav-link">ติดต่อเรา</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Top News Start-->
+    <div class="top-news">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 tn-left">
+            <div class="tn-img">
+              <img src="assets\icon\LogoNews-blue.png" />
+              <div class="tn-content">
+                <div class="tn-content-inner">
+                  <a class="tn-date" href=""
+                    ><i class="far fa-clock"></i>05-Feb-2020</a
+                  >
+                  <a class="tn-title" href=""
+                    >Lorem ipsum dolor sit amet adipiscing elit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 tn-right">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="tn-img">
+                  <img src="assets\img\1.png" />
+                  <div class="tn-content">
+                    <div class="tn-content-inner">
+                      <a class="tn-date" href=""
+                        ><i class="far fa-clock"></i>05-Feb-2020</a
+                      >
+                      <a class="tn-title" href=""
+                        >Integer faucibus pharetra odio</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="tn-img">
+                  <img src="assets\img\2.png" />
+                  <div class="tn-content">
+                    <div class="tn-content-inner">
+                      <a class="tn-date" href=""
+                        ><i class="far fa-clock"></i>05-Feb-2020</a
+                      >
+                      <a class="tn-title" href=""
+                        >Nulla vitae pharetra ligula</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="tn-img">
+                  <img src="assets\img\3.png" />
+                  <div class="tn-content">
+                    <div class="tn-content-inner">
+                      <a class="tn-date" href=""
+                        ><i class="far fa-clock"></i>05-Feb-2020</a
+                      >
+                      <a class="tn-title" href=""
+                        >Ut ac euismod tellus a blandit</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="tn-img">
+                  <img src="assets\img\4.png" />
+                  <div class="tn-content">
+                    <div class="tn-content-inner">
+                      <a class="tn-date" href=""
+                        ><i class="far fa-clock"></i>05-Feb-2020</a
+                      >
+                      <a class="tn-title" href=""
+                        >Cras ac egestas sem nec euismod</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top News End-->
+
+    <!-- Footer Start -->
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h3 class="title">Useful Links</h3>
+              <ul>
+                <li><a href="#">Pellentesque</a></li>
+                <li><a href="#">Aliquam</a></li>
+                <li><a href="#">Fusce placerat</a></li>
+                <li><a href="#">Nulla hendrerit</a></li>
+                <li><a href="#">Maecenas</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h3 class="title">Quick Links</h3>
+              <ul>
+                <li><a href="#">Posuere egestas</a></li>
+                <li><a href="#">Sollicitudin</a></li>
+                <li><a href="#">Luctus non</a></li>
+                <li><a href="#">Duis tincidunt</a></li>
+                <li><a href="#">Elementum</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h3 class="title">Get in Touch</h3>
+              <div class="contact-info">
+                <p>
+                  <i class="fa fa-map-marker"></i>123 Terry Lane, New York, USA
+                </p>
+                <p><i class="fa fa-envelope"></i>email@example.com</p>
+                <p><i class="fa fa-phone"></i>+123-456-7890</p>
+                <div class="social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h3 class="title">Newsletter</h3>
+              <div class="newsletter">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus sed porta dui. Class aptent taciti sociosqu ad litora
+                  torquent per conubia nostra inceptos
+                </p>
+                <form>
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Your email here"
+                  />
+                  <button class="btn">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Footer Bottom Start -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="col-md-6 copyright">
+          <p>
+            Copyright &copy;
+            <a href="http://www.looktung.net/">ลูกทุ่งเน็ตเวิร์ก</a>. All Rights
+            Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
   </body>
 </html>
