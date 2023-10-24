@@ -6,6 +6,10 @@
   font-family: "Sriracha";
 }
 
+i {
+  transition: 0.5s;
+}
+
 /********** General CSS **********************************************************************************/
 body {
   color: #353535;
@@ -44,7 +48,7 @@ h6 {
   padding: 0;
 }
 
-.back-to-top {
+/* .back-to-top {
   position: fixed;
   display: none;
   background: #353535;
@@ -58,6 +62,22 @@ h6 {
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
+} */
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background: #353535;
+  color: #ffffff;
+  border: none;
+  width: 44px;
+  height: 44px;
+  /* border-radius: 5%; /
+  padding: 15px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .back-to-top:hover {
@@ -65,7 +85,7 @@ h6 {
 }
 
 .back-to-top i {
-  padding-top: 12px;
+  / padding-top: 12px; */
   color: #ffffff;
 }
 
@@ -258,8 +278,7 @@ h6 {
 }
 
 .top-news .tn-img img {
-  width: 75%;
-
+  width: 100%;
 }
 
 .top-news .tn-img:hover img {
@@ -469,33 +488,29 @@ h6 {
 }
 
 .footer-bottom .copyright {
-  text-align: left;
-}
-
-.footer-bottom .template-by {
   text-align: right;
 }
 
-.footer-bottom .copyright p,
-.footer-bottom .template-by p {
+/* .footer-bottom .template-by {
+  text-align: right;
+} */
+
+.footer-bottom .copyright p{
   color: #ffffff;
   font-weight: 400;
   margin: 0;
 }
 
-.footer-bottom .copyright p a,
-.footer-bottom .template-by p a {
-  font-weight: 600;
+.footer-bottom .copyright p a{
+  font-weight: auto;
 }
 
-.footer-bottom .copyright p a:hover,
-.footer-bottom .template-by p a:hover {
+.footer-bottom .copyright p a:hover{
   color: #ffffff;
 }
 
-@media (max-width: 768.98px) {
-  .footer-bottom .copyright,
-  .footer-bottom .template-by {
-      text-align: center; 
+@media (max-width: 1080px) {
+  .footer-bottom .copyright{
+    text-align: center; 
   } 
 }
