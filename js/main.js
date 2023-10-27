@@ -105,3 +105,45 @@
     });
 })(jQuery);
 
+
+//------------------------------------------------ Clock ----------------------
+// function showClockRealTime(){
+//     var d = new Data();
+//     document.getElementById("clock").innerHTML = d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()+" น.";
+// }
+// setInterval("ShowClockRealtime()",1000);
+//------------------------------------------------ Clock ----------------------
+
+document.addEventListener('DOMContentLoaded', function () {
+    const cookieConsent = document.getElementById('cookie-consent');
+    const acceptCookie = document.getElementById('accept-cookie');
+
+    function updateCookieConsentPosition() {
+        if (localStorage.getItem('cookiesAccepted') === null) {
+            cookieConsent.style.display = 'block';
+        }
+        // ตรวจสอบความสูงของหน้าจอ
+        const windowHeight = window.innerHeight;
+        // ตรวจสอบความสูงของ Cookie Consent Box
+        const consentHeight = cookieConsent.clientHeight;
+        // ถ้าความสูงของหน้าจอน้อยกว่าความสูงของ Cookie Consent Box
+        if (windowHeight < consentHeight) {
+            cookieConsent.style.top = '0';
+            cookieConsent.style.height = windowHeight + 'px';
+            cookieConsent.style.overflowY = 'auto';
+        }
+    }
+
+    // เรียกใช้ฟังก์ชันในการตรวจสอบและปรับ Cookie Consent Box
+    updateCookieConsentPosition();
+
+    // เมื่อหน้าจอเปลี่ยนขนาดใหม่
+    window.addEventListener('resize', function () {
+        updateCookieConsentPosition();
+    });
+
+    acceptCookie.addEventListener('click', function () {
+        localStorage.setItem('cookiesAccepted', 'true');
+        cookieConsent.style.display = 'none';
+    });
+});
