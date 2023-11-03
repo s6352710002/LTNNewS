@@ -41,7 +41,7 @@
             <div class="logo">
               <a href="">
                 <img
-                  src="assets\img\Logo-NETWORK today_s final-01.png"
+                  src="assets\sources\LOGO-ลูกทุ่งเน็ตเวิร์กนิวส์.png"
                   alt="Logo"
                 />
               </a>
@@ -55,11 +55,21 @@
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="social">
-              <a href=""><i class="fab fa-line"></i></a>
-              <a href=""><i class="fab fa-facebook"></i></a>
-              <a href=""><i class="fab fa-tiktok"></i></a>
-              <a href=""><i class="fab fa-instagram"></i></a>
-              <a href=""><i class="fab fa-youtube"></i></a>
+              <a href="https://page.line.me/196mapof?openQrModal=true"
+                ><i class="fab fa-line"></i
+              ></a>
+              <a href="https://www.facebook.com/Newsnetwork.A?locale=th_TH"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.tiktok.com/@networknews2"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="https://www.instagram.com/looktungnetwork/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.youtube.com/@LTNnews888"
+                ><i class="fab fa-youtube"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -96,18 +106,39 @@
                   ข่าวสาร
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
-                  <li><a href="politics.html" class="dropdown-item">การเมือง</a></li>
-                  <li><a href="forecast.html" class="dropdown-item active">สภาพอากาศ</a></li>
-                  <li><a href="economy.html" class="dropdown-item ">เศรษฐกิจ</a></li>
-                  <li><a href="entertainment.html" class="dropdown-item">บันเทิง</a></li>
+                  <li>
+                    <a href="politics.html" class="dropdown-item">การเมือง</a>
+                  </li>
+                  <li>
+                    <a href="forecast.html" class="dropdown-item active"
+                      >สภาพอากาศ</a
+                    >
+                  </li>
+                  <li>
+                    <a href="economy.html" class="dropdown-item">เศรษฐกิจ</a>
+                  </li>
+                  <li>
+                    <a href="entertainment.html" class="dropdown-item"
+                      >บันเทิง</a
+                    >
+                  </li>
                 </div>
               </div>
-              <a href="forecast.html" class="nav-item nav-link active">พยากรณ์อากาศ</a>
+              <a href="forecast.html" class="nav-item nav-link active"
+                >พยากรณ์อากาศ</a
+              >
               <a href="reporter.html" class="nav-item nav-link">ทีมข่าว</a>
-              <a href="term.html" class="nav-item nav-link "
+              <a href="term.html" class="nav-item nav-link"
                 >นโยบายความเป็นส่วนตัว</a
               >
               <a href="contact.html" class="nav-item nav-link">ติดต่อเรา</a>
+              <a
+                href="live.html"
+                class="nav-item nav-link"
+                style="font-family: Kanit"
+              >
+                🔴 LIVE</a
+              >
             </div>
           </div>
         </nav>
@@ -115,24 +146,66 @@
     </div>
     <!-- Header End -->
 
+    <!-- Headline Start -->
+    <div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="border-forecast">
+            <div class="col-hl-1">
+              <h1 style="padding-left: 10px"><b>พยากรณ์อากาศ</b></h1>
+              <div id="datetime"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Headline End -->
 
+    <!-- Main Content Start -->
+    
+    <div class="main-content">
 
+      <!-- Forecast 7 days Start -->
+      <div class="fix-con-7days">
+        <div class="forecast7days">
+          <iframe
+            src="https://tmd.go.th/weatherForecast7DaysWidget?province=กรุงเทพมหานคร"
+            height="350" 
+            width="1000"
+            scrolling="no"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+      
+      
+
+      <!-- Forecast 7 days End -->
+    </div>
+    <!-- Main Content End -->
 
     <!-- Footer Bottom Start -->
     <div class="footer-bottom">
       <div class="container">
-        <div class="row" >
+        <div class="row">
           <div class="copyright">
-              <p>Copyright &copy; <a href="http://www.looktung.net/">บริษัท ลูกทุ่งเน็ตเวิร์ก 24 ชั่วโมง จำกัด</a>. All Rights Reserved</p>
+            <p>
+              Copyright &copy;
+              <a href="http://www.looktung.net/"
+                >บริษัท ลูกทุ่งเน็ตเวิร์ก 24 ชั่วโมง จำกัด</a
+              >. All Rights Reserved
+            </p>
           </div>
-      </div>
+        </div>
       </div>
     </div>
     <!-- Footer Bottom End -->
 
     <!-- Back to Top -->
     <!-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
-    <a href="#" class="back-to-top" id="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <a href="#" class="back-to-top" id="back-to-top"
+      ><i class="fa fa-chevron-up"></i
+    ></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

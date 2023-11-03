@@ -70,48 +70,57 @@
     });
     
     // Category News Slider
-    $('.cn-slider').slick({
-        autoplay: false,
-        infinite: true,
-        dots: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 1
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
+    // $('.cn-slider').slick({
+    //     autoplay: false,
+    //     infinite: true,
+    //     dots: false,
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1,
+    //     responsive: [
+    //         {
+    //             breakpoint: 1200,
+    //             settings: {
+    //                 slidesToShow: 2
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 992,
+    //             settings: {
+    //                 slidesToShow: 1
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 768,
+    //             settings: {
+    //                 slidesToShow: 2
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 576,
+    //             settings: {
+    //                 slidesToShow: 1
+    //             }
+    //         }
+    //     ]
+    // });
 })(jQuery);
 
 
 //------------------------------------------------ Clock ----------------------
-// function showClockRealTime(){
-//     var d = new Data();
-//     document.getElementById("clock").innerHTML = d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()+" น.";
-// }
-// setInterval("ShowClockRealtime()",1000);
+function updateDateTime() {
+    const currentDate = new Date(); // ระบุวันที่และเวลาที่คุณต้องการแสดง
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+    const formattedDate = currentDate.toLocaleDateString('th-TH', options);
+
+    document.getElementById('datetime').textContent = formattedDate;
+}
+
+// เรียกใช้ฟังก์ชันเพื่อแสดงวันที่และเวลาปัจจุบัน
+updateDateTime();
+
+// อัปเดตวันที่และเวลาทุกวินาที
+setInterval(updateDateTime, 1000);
+
 //------------------------------------------------ Clock ----------------------
 
 document.addEventListener('DOMContentLoaded', function () {

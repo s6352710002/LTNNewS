@@ -6,8 +6,16 @@
   font-family: "Sriracha";
 }
 
+html {
+  height: 100%;
+}
+
 i {
   transition: 0.5s;
+}
+
+div {
+  display: block;
 }
 
 /********** General CSS **********************************************************************************/
@@ -16,6 +24,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 a {
@@ -48,22 +59,6 @@ h6 {
   padding: 0;
 }
 
-/* .back-to-top {
-  position: fixed;
-  display: none;
-  background: #353535;
-  color: #ffffff;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  line-height: 1;
-  font-size: 16px;
-  right: 15px;
-  bottom: 15px;
-  transition: background 0.5s;
-  z-index: 11;
-} */
-
 .back-to-top{
   display: none;
   position: fixed;
@@ -86,16 +81,23 @@ h6 {
   padding: 10px;
   text-align: left;
   margin-right: auto;
-  padding-left: 20px;
+  padding-left: 50px;
+  padding-top: 20px;
 }
 .border-headline h1 {
   color: rgb(112, 104, 223);
 }
 
+
+
 /********* Top Header  ***********************************************************************************/
 .top-header {
   padding: 15px 0;
   background: #656ba0;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  flex: 0 0 auto;
 }
 
 .top-header .logo {
@@ -104,7 +106,7 @@ h6 {
 }
 
 .top-header .logo a img {
-  max-width: 200px;
+  max-width: 150px;
   max-height: auto;
 }
 
@@ -267,6 +269,34 @@ h6 {
   }
 }
 
+/********** Main Content Container **************************************************************************/
+.main-content {
+  background: white;
+  flex: 1 0 auto;
+}
+
+/********** Live Content Container **************************************************************************/
+.border-headline {
+  width: 100%;
+}
+.live-icon {
+  text-align: left;
+  margin-right: auto;
+  padding-left: 500px;
+  width: 34%;
+}
+.border-screen {
+  width: 100%;
+  background-color: white; 
+  position: relative;
+}
+.border-screen iframe {
+  width: 40%;
+  min-height: 340px;
+  margin-left: 30%;
+  background-color: black; 
+}
+
 /********** Top News CSS ******************************************************************************/
 
 .top-news {
@@ -342,6 +372,28 @@ h6 {
   color: #E47A2E;
 }
 
+
+/********** privacy-container *******************************************************************************/
+.head-term {
+  position: relative;
+  width: 100%;
+  padding-top: 3%;
+  padding-left: auto;
+  text-align: center;
+}
+.head-term h1 {
+  color: rgb(112, 104, 223);
+}
+.term {
+  font-family: kanit;
+  font-size: large;
+  position: relative;
+  width: 100%;
+  padding-top: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
 /********** Main Contact *********************************************************************************/
 .social {
   font-size: larger;
@@ -350,12 +402,29 @@ h6 {
   padding-bottom: 15px;
   font-size: 200%;
 }
-.columns-1, .columns-2, .columns-3 {
+.columns-2, .columns-3 {
   padding-left: 30px;
   padding-bottom: 15px;
 }
+.columns-1 {
+  padding-left: 30px;
+  padding-bottom: 0px;
+}
 .con-contact {
   margin: auto;
+  width: 100%;
+  flex: 1 0 0;
+}
+.columns-1 a img {
+  width: 40%;
+  margin-left: 10%;
+  padding-top: 20px;
+}
+.columns-3 {
+  margin-left: 10%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
 }
 
 /********** Footer CSS ***********************************************************************************/
@@ -365,6 +434,7 @@ h6 {
   padding: 60px 0 0 0;
   margin-top: 15px;
   background: #353535;
+  flex: 0 0 auto;
 }
 
 @media (min-width: 992px) {
@@ -541,8 +611,8 @@ h6 {
 .cookie-consent {
   position: fixed;
   bottom: 0;
-  margin-left: 25%;
-  width: 50%;
+  margin-left: 15%;
+  width: 70%;
   background: rgba(255, 255, 255, 0.9); /* สีขาวใส */
   color: #333; /* เปลี่ยนสีตัวอักษรเป็นสีดำหรือสีอื่นตามที่คุณต้องการ */
   padding: 10px;
@@ -573,4 +643,33 @@ h6 {
 
 .accept-cookie:hover {
   background: #45a049;
+}
+
+/************ forecast 7 days *******************************************************************************/
+.forecast7days {
+
+  max-width: 80%;
+  background-color: pink;
+  height: 380px;
+}
+.border-forecast{
+    text-align: center;
+    padding-right: auto;
+    padding-left: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.border-forecast h1 {
+  color: rgb(112, 104, 223);
+}
+@media (max-width: 1080px){
+  .fix-con-7days{
+    overflow-x: auto !important;
+  }
+}
+.fix-con-7days{
+  width: 90%;
+  margin: 5%;
+  background: #656ba0;
+  height: 380px;
 }
