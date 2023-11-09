@@ -188,3 +188,16 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+function nextSlide() {
+    // หาสไลด์ถัดไป
+    var nextSlide = document.querySelector(".slideshow-container img:nth-child(2)");
+  
+    // เลื่อนสไลด์ไปที่สไลด์ถัดไป
+    nextSlide.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+  
+  // เรียกใช้ฟังก์ชัน nextSlide() ทุกๆ 2 วินาที
+  setInterval(nextSlide, 2000);
