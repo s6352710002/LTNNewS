@@ -284,6 +284,7 @@ h6 {
 .border-headline {
   width: 100%;
   /* border: 2px solid pink; */
+  background-image: linear-gradient( #8189ea,#9fa5ea,#b1b7f3);
 }
 .live-icon {
   text-align: center;
@@ -303,6 +304,7 @@ h6 {
 .border-screen {
   width: 100%;
   background-color: #b1b7f3; 
+  background-image: linear-gradient( #b1b7f3,white,white);
   position: relative;
   padding-bottom: 170px;
 }
@@ -313,12 +315,13 @@ h6 {
   background-color: black; 
 }
 
-/********** Top News CSS ******************************************************************************/
+/********** index page ******************************************************************************/
 
 .LogoNetworkToday {
   margin-top: 50px;
-  background-color: rgb(112, 104, 223);
+  background-color: #E47A2E;
   /* background-color: #656ba0; */
+  /* background-image: linear-gradient(rgb(112, 104, 223), rgb(112, 104, 223),white,#E47A2E); */
   width: 100%;
   height: 75px;
   padding-left: 5%;
@@ -334,16 +337,18 @@ h6 {
   position: relative;
   width: 100%;
   padding: 30px 0 0 0;
-  background-color: white;
+  background-image: linear-gradient( rgb(112, 104, 223),white,white,white);
 }
 
 .top-news .col-md-6 {
   margin-bottom: 30px;
+  
 }
 
 .top-news .tn-img {
   position: relative;
   overflow: hidden;
+  
 }
 
 .top-news .tn-img img {
@@ -367,6 +372,7 @@ h6 {
   background-image: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .3), rgba(0, 0, 0, .9));
   display: flex;
   align-items: flex-end;
+  
 }
 
 .top-news .tn-content a.tn-date{
@@ -378,6 +384,7 @@ h6 {
   font-weight: 400;
   transition: .3s;
   letter-spacing: 1px;
+  
 }
 
 .top-news .tn-content a.tn-date i {
@@ -385,7 +392,7 @@ h6 {
 }
 
 .top-news .tn-content a.tn-date:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .top-news .tn-content a.tn-title {
@@ -395,6 +402,7 @@ h6 {
   font-size: 18px;
   font-weight: 400;
   transition: .3s;
+  
 }
 
 .top-news .tn-left .tn-content a.tn-title {
@@ -404,6 +412,44 @@ h6 {
 
 .top-news .tn-content a.tn-title:hover {
   color: #E47A2E;
+}
+
+.yt-short-flex-con{
+  display: flex;
+  align-items: center;
+  /* border: 2px solid red; */
+  padding: 20px;
+  justify-content: center;
+  width: auto;
+  background-image: linear-gradient(white, rgb(112, 104, 223));
+}
+
+.yt-content{
+  display: flex;
+  justify-content: center;
+  /* border: 5px solid blue; */
+  padding: 10px;
+  margin: auto;
+  position: relative;
+  width: auto;
+  align-items: center;
+  overflow: hidden;
+}
+
+.yt-content iframe{
+  /* margin-left: 17%; */
+  /* height: auto; */
+  width: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width:800px){
+  .yt-short-flex-con{
+      flex-direction: column;
+      flex-grow: 1;
+      width: auto;
+  }
 }
 
 
@@ -715,6 +761,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   /* background: #656ba0; */
+  background-image: radial-gradient(#828deb 32%  , #b1b7f3 70% );
   height: 350px;
   display: flex;
 }
@@ -914,10 +961,12 @@ h6 {
   padding-left: 70px; 
   padding-right: 70px; 
   padding-top: 30px;
+  text-decoration: none;
 }
 .grid-wn-a-item h6{
   padding-left: 70px;
   padding-right: 70px;
+  text-decoration: none;
 }
 
 /********************** reporter page **********************************************************************/
@@ -925,14 +974,16 @@ h6 {
   display: flex;
   padding-bottom: 100px;
   background-color: white;
+  width: 100%;
 }
-@media (max-width: 768px){
+@media (max-width: 1000px){
   .flex-con-reporter{
       flex-direction: column;
   }
 }
 .ps-1 img{
-  width: 370px;
+  /* width: 370px; */
+  width: 100%;
   height: 100%;
   filter: drop-shadow(8px 8px 10px gray);
   -webkit-filter: drop-shadow(8px 8px 10px gray);
@@ -950,7 +1001,8 @@ h6 {
   color: rgb(112, 104, 223);
 }
 .ps-2 img{
-  width: 490px;
+  /* width: 490px; */
+  width: 100%;
   height: 100%;
   filter: drop-shadow(8px 8px 10px gray);
   -webkit-filter: drop-shadow(8px 8px 10px gray);
@@ -959,6 +1011,7 @@ h6 {
 .ps-2{
   /* border: 2px solid red; */
   text-align: center;
+  width: 100%;
 }
 .ps-2 h3{
   padding-top: 20px;
