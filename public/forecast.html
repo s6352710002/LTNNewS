@@ -151,7 +151,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="border-forecast">
-            <div class="col-hl-1">
+            <div class="hl-forecast">
               <h1 style="padding-left: 10px"><b>พยากรณ์อากาศ</b></h1>
               <div id="datetime"></div>
             </div>
@@ -163,21 +163,33 @@
 
     <!-- Main Content Start -->
     
-    <div class="main-content">
+    <div class="main-content" style="background-color: white;">
+      <div class="row-wg-fc-day">
 
-      <!-- Forecast 7 days Start -->
-      <div class="fix-con-7days">
-        <div class="forecast7days">
-          <iframe
-            src="https://tmd.go.th/weatherForecast7DaysWidget?province=กรุงเทพมหานคร"
-            //height="350" 
-            //width="1000"
-            scrolling="no"
-            frameborder="0"
-          ></iframe>
+        <!-- Forecast 7 days Start -->
+        <div class="fix-con-7days">
+          <div class="forecast7days">
+            <iframe 
+            src="https://www.tmd.go.th/TodayWeatherWidget?province=กรุงเทพมหานคร" 
+            height="350" 
+            width="290"
+            scrolling="no" 
+            frameborder="0">
+            </iframe>
+
+            <iframe
+              src="https://tmd.go.th/weatherForecast7DaysWidget?province=กรุงเทพมหานคร"
+              //height="350" 
+              //width="1000"
+              scrolling="no"
+              frameborder="0"> 
+            </iframe>
+          </div>
         </div>
+        <!-- Forecast 7 days End -->
+
       </div>
-      <!-- Forecast 7 days End -->
+      
 
       <!-- widget-con Start -->
       <div class="widget-con">
@@ -251,6 +263,47 @@
         
       </div>
       <!-- Warning announcement End -->
+
+      <!-- YouTube forecast Start -->
+
+      <div class="yt-fc-hl">
+        <h1>คลิปรายงานพยากรณ์อากาศ<hr></h1>
+      </div>
+
+      <div class="yt-fc-flex-con">
+        <div class="yt-fc-content">
+          <iframe width="600" height="300" 
+            src="https://www.youtube.com/embed/UYrn8ILkp-M" 
+            title="พยากรณ์อากาศ24ชั่วโมงอุณหภูมิลดทั่วไทย#อากาศหนา#อากาศหนาว #ฤดูหนาว #พยากรณ์อากาศ" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="yt-fc-content">
+          <iframe width="600" height="300" 
+            src="https://www.youtube.com/embed/zeLg4oVgIAg" 
+            title="เจาะข่าว today&#39;s14.11.23 #ประกาศฤดูหนาว#พยากรณ์อากาศ #ฤดูหนาว" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="yt-fc-content">
+          <iframe width="600" height="300" 
+            src="https://www.youtube.com/embed/tFLBDsFWSO8" 
+            title="รศ.ดร.เสรี ระบุปีนี้หนาวช้าแถมหนาวแต่ไม่หนาว#ลูกทุ่งเน็ตเวิร์กนิวส์ #อากาศหนาว" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      
+      <div class="yt-fc-hl" style="background-image: linear-gradient( rgb(138, 131, 230) , white);">
+        <hr>
+      </div>
+      <!-- YouTube forecast End -->
 
     </div>
     <!-- Main Content End -->
