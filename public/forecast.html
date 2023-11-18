@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ลูกทุ่งเน็ตเวิร์กนิวส์ LTN NewS</title>
 
     <!-- Favicons -->
@@ -31,48 +31,62 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  </head>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Sriracha&display=swap" rel="stylesheet">
+
+</head>
   <body>
     <!-- Top Header Start -->
     <div class="top-header">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-3 col-md-4">
-            <div class="logo">
-              <a href="">
-                <img
-                  src="assets\sources\LOGO-ลูกทุ่งเน็ตเวิร์กนิวส์.png"
-                  alt="Logo"
-                />
-              </a>
+      <div class="container" >
+        <div class="th-rap">
+          <div class="row align-items-center" >
+            <div class="col-lg-3 col-md-4" >
+              <div class="logo">
+                <a href="index.html">
+                  <img
+                    src="assets\sources\LOGO-ลูกทุ่งเน็ตเวิร์กนิวส์.png"
+                    alt="Logo"
+                  />
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-4">
-            <div class="search">
-              <input type="text" placeholder="Search" />
-              <button><i class="fa fa-search"></i></button>
+            <div class="col-lg-3 col-md-4" >
+              <div class="social">
+                <a target="_blank" href="https://page.line.me/196mapof?openQrModal=true"
+                  ><i class="fab fa-line"></i
+                ></a>
+                <a target="_blank" href="https://www.facebook.com/Newsnetwork.A?locale=th_TH"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a target="_blank" href="https://www.tiktok.com/@networknews2"
+                  ><i class="fab fa-tiktok"></i
+                ></a>
+                <a target="_blank" href="https://www.instagram.com/looktungnetwork/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a target="_blank" href="https://www.youtube.com/@LTNnews888"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="social">
-              <a target="_blank"href="https://page.line.me/196mapof?openQrModal=true"
-                ><i class="fab fa-line"></i
-              ></a>
-              <a target="_blank" href="https://www.facebook.com/Newsnetwork.A?locale=th_TH"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a target="_blank" href="https://www.tiktok.com/@networknews2"
-                ><i class="fab fa-tiktok"></i
-              ></a>
-              <a target="_blank" href="https://www.instagram.com/looktungnetwork/"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a target="_blank" href="https://www.youtube.com/@LTNnews888"
-                ><i class="fab fa-youtube"></i
-              ></a>
+            <div class="col-lg-3 col-md-4" >
+              <div class="login-btn">
+                
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4" style=" text-align: center; ">
+              <div class="login-btn">
+                <button class="login-btn btn"><i class="fa-solid fa-circle-user fa-xl"></i>&nbsp;&nbsp;เข้าสู่ระบบ</button>
+              </div>
             </div>
           </div>
         </div>
+        
+        
       </div>
     </div>
     <!-- Top Header End -->
@@ -96,12 +110,13 @@
             id="navbarCollapse"
           >
             <div class="navbar-nav m-auto">
-              <a href="index.html" class="nav-item nav-link">หน้าหลัก</a>
+              <a href="index.html" class="nav-item nav-link ">หน้าหลัก</a>
               <div class="nav-item dropdown">
                 <a
-                  href="newsboard.html"
+                  href=""
                   class="nav-link dropdown-toggle"
                   data-toggle="dropdown"
+                  aria-expanded="false"
                 >
                   ข่าวสาร
                 </a>
@@ -110,23 +125,20 @@
                     <a href="politics.html" class="dropdown-item">การเมือง</a>
                   </li>
                   <li>
-                    <a href="forecast.html" class="dropdown-item active"
-                      >สภาพอากาศ</a
-                    >
+                    <a href="forecast.html" class="dropdown-item active">สภาพอากาศ</a>
                   </li>
                   <li>
                     <a href="economy.html" class="dropdown-item">เศรษฐกิจ</a>
                   </li>
                   <li>
-                    <a href="entertainment.html" class="dropdown-item"
-                      >บันเทิง</a
-                    >
+                    <a href="entertainment.html" class="dropdown-item">บันเทิง</a>
+                  </li>
+                  <li>
+                    <a href="knowledge.html" class="dropdown-item">ความรู้เกี่ยวกับภัยพิบัติ</a>
                   </li>
                 </div>
               </div>
-              <a href="forecast.html" class="nav-item nav-link active"
-                >พยากรณ์อากาศ</a
-              >
+              <a href="forecast.html" class="nav-item nav-link active">พยากรณ์อากาศ</a>
               <a href="reporter.html" class="nav-item nav-link">ทีมข่าว</a>
               <a href="term.html" class="nav-item nav-link"
                 >นโยบายความเป็นส่วนตัว</a
@@ -300,7 +312,7 @@
         </div>
       </div>
       
-      <div class="yt-fc-hl" style="background-image: linear-gradient( rgb(138, 131, 230) , white);">
+      <div class="yt-fc-hl" style="background-image: linear-gradient( #b1b7f3, white);">
         <hr>
       </div>
       <!-- YouTube forecast End -->
@@ -314,55 +326,55 @@
         <div class="row">
           <div class="col-lg-3 col-md-6">
             <div class="footer-widget">
-              <h3 class="title">Useful Links</h3>
+              <h3 class="title" style="color: #b1b7f3;">สารบัญ</h3>
               <ul>
-                <li><a href="#">Pellentesque</a></li>
-                <li><a href="#">Aliquam</a></li>
-                <li><a href="#">Fusce placerat</a></li>
-                <li><a href="#">Nulla hendrerit</a></li>
-                <li><a href="#">Maecenas</a></li>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="reporter.html">ทีมข่าว</a></li>
+                <li><a href="politics.html">นโยบายความเป็นส่วนตัว</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+                <li><a href="live.html">ไลฟ์สด</a></li>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-widget">
-              <h3 class="title">Quick Links</h3>
+              <h3 class="title" style="color: #b1b7f3;">ข่าวสาร</h3>
               <ul>
-                <li><a href="#">Posuere egestas</a></li>
-                <li><a href="#">Sollicitudin</a></li>
-                <li><a href="#">Luctus non</a></li>
-                <li><a href="#">Duis tincidunt</a></li>
-                <li><a href="#">Elementum</a></li>
+                <li><a href="index.html">ข่าวเด่น</a></li>
+                <li><a href="forecast.html">พยากรณ์อากาศ</a></li>
+                <li><a href="politics.html">การเมือง</a></li>
+                <li><a href="economy.html">เศรษฐกิจ</a></li>
+                <li><a href="entertainment.html">บันเทิง</a></li>
+                <li><a href="knowledge.html">ความรู้เกี่ยวกับภัยพิบัติ</a></li>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-widget">
-              <h3 class="title">Address</h3>
+              <h3 class="title" style="color: #b1b7f3;">Address</h3>
               <div class="contact-info">
                 <p>
-                  <i class="fa fa-map-marker"></i>เลขที่ 69/34 หมู่ 12
-                  ถนนพุทธมณฑลสาย 3 แขวงศาลาธรรมสพน์ เขตทวีวัฒนา กรุงเทพมหานคร
-                  10170
+                  <i class="fa fa-map-marker" style="color: #b1b7f3;"></i>&nbsp;เลขที่ 69/34 หมู่ 12
+                  ถนนพุทธมณฑลสาย 3 <p>แขวงศาลาธรรมสพน์ เขตทวีวัฒนา กรุงเทพมหานคร 10170</p>  
                 </p>
-                <p><i class="fa fa-envelope"></i>looktungch@gmail.com</p>
-                <p><i class="fa fa-phone"></i>02-4411030 , 083 694 2456</p>
+                <p><i class="fa fa-envelope" style="color: #b1b7f3;"></i>&nbsp;looktungch@gmail.com</p>
+                <p><i class="fa fa-phone" style="color: #b1b7f3;"></i>&nbsp;02-4411030 , 083 694 2456</p>
                 <div class="social">
                   <a target="_blank" href="https://page.line.me/196mapof?openQrModal=true"
                     ><i class="fab fa-line"></i
                   ></a>
-                  <a target="_blank" href="https://www.facebook.com/looktungnetwork/"
+                  <a target="_blank" href="https://www.facebook.com/Newsnetwork.A?locale=th_TH"
                     ><i class="fab fa-facebook"></i
                   ></a>
-                  <a target="_blank" href="https://www.tiktok.com/@looktungnetwork"
+                  <a target="_blank" href="https://www.tiktok.com/@networknews2"
                     ><i class="fab fa-tiktok"></i
                   ></a>
                   <a target="_blank" href="https://www.instagram.com/looktungnetwork/"
                     ><i class="fab fa-instagram"></i
                   ></a>
-                  <a target="_blank" href="https://www.youtube.com/channel/UCT0mNDOkV52PU4ziNrqFfyg"
+                  <a target="_blank" href="https://www.youtube.com/@LTNnews888"
                     ><i class="fab fa-youtube"></i
                   ></a>
                 </div>
@@ -372,12 +384,11 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-widget">
-              <h3 class="title">ลูกทุ่งเน็ตเวิร์กนิวส์</h3>
+              <h3 class="title" style="color: #b1b7f3;">ลูกทุ่งเน็ตเวิร์กนิวส์</h3>
               <div class="newsletter">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vivamus sed porta dui. Class aptent taciti sociosqu ad litora
-                  torquent per conubia nostra inceptos
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;พบกับข่าวสาร บ้านเมือง การพยากรณ์อากาศ เศษฐกิจ ความบันเทิง 
+                  สาระความรู้เกี่ยวกับภัยพิบัติและการเตือนภัยของมูลนิธิสภาเตือนภัยพิบัติแห่งชาติก่อนใคร ตลอด 24 ชั่วโมง
                 </p>
                 <form>
                   <input
@@ -412,8 +423,27 @@
     </div>
     <!-- Footer Bottom End -->
 
+    <!-- Cookie Start -->
+    <div id="cookie-consent" class="cookie-consent">
+      <table>
+        <tr>
+          <td>
+            <p style="padding-top: 20px; padding-left: 15px;padding-right: 15px;">
+              เว็บไซต์ของเรามีการใช้งานคุกกี้ (Cookies)
+              เพื่อจัดการข้อมูลส่วนบุคคล
+              และช่วยเพิ่มประสิทธิภาพการใช้งานเว็บไซต์
+              <a href="term.html">ศึกษารายละเอียดเพิ่มเติม</a>
+            </p>
+          </td>
+          <td style="padding-right: 15px;">
+            <button id="accept-cookie" class="accept-cookie">Accept</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- Cookie End -->
+
     <!-- Back to Top -->
-    <!-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
     <a href="#" class="back-to-top" id="back-to-top"
       ><i class="fa fa-chevron-up"></i
     ></a>
@@ -423,6 +453,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/slick/slick.min.js"></script>
+    <script src="JS/datetime.js" type="text/javascript"></script>
+    <script src="JS/jquery-3.6.0.js" type="text/javascript"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   transition: 0.5s;
-  font-family: "Sriracha";
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Sriracha', cursive;
 }
 
 html {
@@ -109,47 +110,32 @@ h6 {
   flex: 0 0 auto;
 }
 
-.top-header .logo {
+.login-btn .btn{
+  background-color: rgb(112, 104, 223);
+  border: none;
+  color: white;
+  height: 40px;
   text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid #b1b7f3;
+}
+.login-btn .btn:hover{
+  background-color: white;
+  color: rgb(112, 104, 223);
+}
+.top-header .logo {
+  text-align: center;
   overflow: hidden;
 }
 
 .top-header .logo a img {
   max-width: 150px;
   max-height: auto;
-}
-
-.top-header .search {
-  width: 100%;
-}
-
-.top-header .search input[type=text] {
-  width: 100%;
-  height: 40px;
-  padding: 0 15px;
-  color: #666666;
-  border: 1px solid #353535;
-}
-
-.top-header .search input[type=text]:focus {
-  border-color: #E47A2E;
-}
-
-.top-header .search button {
-  position: absolute;
-  width: 40px;
-  height: 38px;
-  top: 1px;
-  right: 16px;
-  padding: 0 15px;
-  border: none;
-  background: none;
-  color: #353535;
-}
-
-.top-header .search button:hover {
-  background: #E47A2E;
-  color: #ffffff;
 }
 
 .top-header .social {
@@ -202,7 +188,6 @@ h6 {
       margin-bottom: 0;
   }
 }
-
 /********* Header Nav CSS ********************************************************************************/
 .header {
   position: relative;
@@ -459,6 +444,40 @@ h6 {
   }
 }
 
+.poli-id-fc{
+  /* display: flex; */
+  width: 70%;
+  border: 5px solid #45a049;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15%;
+}
+.poli-id-fc h1{
+  width: 100%;
+  border: 5px solid #E47A2E;
+}
+.ex-poli-con{
+  /* padding-left: 10%; */
+  border: 5px solid red;
+  display: grid;
+  grid-template-columns: [first] 60% [line2] 10% [line3] 15% [line4] 15% [end];
+  grid-template-rows: [row1-start] 50% [row1-end] auto [last-line];
+  justify-content: stretch; 
+}
+.ex-poli1{
+  /* padding-left: 2%; */
+  /* width: 60%; */
+  border: 2px solid blue;
+  grid-column: first / line2;
+  grid-row: row1-start / last-line ;
+} 
+.ex-poli2{
+  /* width: 60%; */
+  border: 2px solid black;
+  grid-column: line3 / line4;
+  grid-row: row1-start / row1-end;
+}
+
 /********** privacy-container *******************************************************************************/
 .head-term {
   position: relative;
@@ -699,8 +718,8 @@ h6 {
 .cookie-consent {
   position: fixed;
   bottom: 0;
-  margin-left: 15%;
-  width: 70%;
+  margin-left: 20%;
+  width:auto;
   background: rgba(255, 255, 255, 0.9); /* สีขาวใส */
   color: #333; /* เปลี่ยนสีตัวอักษรเป็นสีดำหรือสีอื่นตามที่คุณต้องการ */
   padding: 10px;
@@ -719,6 +738,7 @@ h6 {
   z-index: 9999; /* จัดให้มีความสูงในการแสดงผลที่ต่ำกว่า Cookie Consent Box */
   display: none;
   pointer-events: none; /* ไม่สามารถคลิกหรือแอบแสดงผลที่อยู่ข้างหลัง */
+
 }
 
 .accept-cookie {
@@ -727,6 +747,7 @@ h6 {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  
 }
 
 .accept-cookie:hover {
@@ -755,10 +776,6 @@ h6 {
   align-items: center;
   
 }
-
-/* .tb-slide td {
-   border-right: 1px solid #111111; 
-} */
 
 .mySlides {
   display: none;
@@ -801,7 +818,7 @@ h6 {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   padding: 10px;
   font-size: 20px;
@@ -871,6 +888,7 @@ h6 {
 .forecast-daily iframe{
   background-color: #111111;
   width: auto;
+  
 }
 /*-------------- forecast 7 days ---------------------------*/
 .forecast7days {
@@ -1015,7 +1033,7 @@ h6 {
   /* border: 2px solid red; */
   justify-content: center;
   width: auto;
-  background-image: linear-gradient(white, rgb(112, 104, 223), rgb(138, 131, 230));
+  background-image: linear-gradient(white,  rgb(138, 131, 230) ,#b1b7f3);
 }
 .yt-fc-content{
   display: flex;
