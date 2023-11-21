@@ -75,14 +75,39 @@
               </div>
             </div>
             <div class="col-lg-3 col-md-4" >
-              <div class="login-btn">
-                
-              </div>
+              
             </div>
             <div class="col-lg-3 col-md-4" style=" text-align: center; ">
-              <div class="login-btn">
-                <button class="login-btn btn"><i class="fa-solid fa-circle-user fa-xl"></i>&nbsp;&nbsp;เข้าสู่ระบบ</button>
+              <div class="login-btn-con">
+                <div class="login-btn">
+                <button class="login-btn btn" id="show-login">
+                  <i class="fa-solid fa-circle-user fa-xl"></i>
+                  &nbsp;&nbsp;เข้าสู่ระบบ
+                </button>
               </div>
+              <div class="popup">
+                <div class="close-btn">&times;</div>
+                <div class="form-login">
+                  <h2>Log in</h2>
+                  <div class="form-element">
+                    <label for="id-emp">ID</label>
+                    <input type="text" id="id-emp" placeholder="Enter your ID">
+                  </div>
+                  <div class="form-element">
+                    <label for="pass-emp">Password</label>
+                    <input type="password" id="pass-emp" placeholder="Enter password">
+                  </div>
+                  <div class="form-element">
+                    <input type="checkbox" id="remember-me-emp">
+                    <label for="remember-me-emp">Remember me</label>
+                  </div>
+                  <div class="form-element">
+                    <button>Sing in</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -352,16 +377,137 @@
       </div>
       <!-- YouTube Short News End -->
       
-      <hr class="line" style="border: 10px solid tomato ;">
+      <hr class="line" style="border: 8px solid #E47A2E;">
       <div class="poli-id-fc">
         <h1>การเมือง</h1>
-        <div class="ex-poli-con">
-          <div class="ex-poli1 ">123</div>
-          <div class="ex-poli2 "></div>
-          <div class="ex-poli3"></div>
-          <div class="ex-poli4"></div>
-        </div>
+        <section class="articles">
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://picsum.photos/id/1011/800/450" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>This is some title</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://picsum.photos/id/1005/800/450" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>This is some title</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://picsum.photos/id/103/800/450" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>This is some title</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        </section>
       </div>
+
+      <div class="poli-id-fc">
+        <h1>เศรษฐกิจ</h1>
+        <section class="articles">
+        <article>
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://picsum.photos/id/1011/800/450" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>This is some title</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://picsum.photos/id/1005/800/450" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>This is some title</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://picsum.photos/id/103/800/450" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>This is some title</h2>
+              <p>
+                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+              </p>
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        </section>
+      </div>
+      
       
       
 
