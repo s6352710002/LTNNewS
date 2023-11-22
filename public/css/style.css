@@ -450,13 +450,13 @@ h6 {
 }
 
 .poli-id-fc{
-  /* display: flex; */
+  padding-top: 40px;
   width: 70%;
   /* border: 5px solid #45a049; */
   align-items: center;
   justify-content: center;
   margin-left: 15%;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .poli-id-fc h1{
   width: 100%;
@@ -477,7 +477,10 @@ h6 {
   background-color: #ffa565;
   border-radius: 10px;
 }
-
+.poli-id-fc section{
+  padding-top: 20px;
+  /* border: 6px solid #111111; */
+}
 
 /*---------- card container ------------------------------------------------------------------------*/
 article {
@@ -1395,39 +1398,46 @@ Generic layout (demo looks)
   margin-left: -100%;
   /* top: -150%;
   left: 50%; */
-  opacity: 1;
+  opacity: 0;
   transform: translate(-50%,-50%) scale(1.25);
   width: 380px;
   padding: 20px 30px;
   background: #fff;
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .15);
   border-radius: 10px;
-  z-index:+2;
-  /* transition: top 0ms ease-in-out 200ms, 
-              opacity 200ms ease-in-out 0ms,
-              transform 200ms ease-in-out 0ms; */
+  z-index:-1;
+  transition:top 0ms ease-in-out 200ms, 
+            opacity 200ms ease-in-out 0ms,
+            transform 200ms ease-in-out 0ms;
 }
-.popup .active{
+.popup.active{
   top: 50%;
   opacity: 1;
   transform: translate(-50%,-50%) scale(1);
-  /* transition: top 0ms ease-in-out 0ms, 
+  z-index:+1;
+  transition: top 0ms ease-in-out 0ms, 
               opacity 200ms ease-in-out 0ms,
-              to 200ms ease-in-out 0ms, */
+              transform 200ms ease-in-out 0ms;
 }
 .popup .close-btn{
   position: absolute;
-  top: 10px;
+  top: 8px;
   right: 10px;
-  width: 15px;
-  height: 15px;
-  background: #111111;
+  width: 16px;
+  height: 16px;
+  background: #929292;
   color: white;
   text-align: center;
   line-height: 15px;
   border-radius: 7px;
   cursor: pointer;
 }
+.popup .close-btn:hover{
+  background: #E47A2E;
+}
+/* .popup .close-btn.active{
+  z-index:-1;
+} */
 .popup .form-login h2{
   text-align: center;
   color: rgb(112, 104, 223);

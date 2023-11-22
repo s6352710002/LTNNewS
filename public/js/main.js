@@ -158,6 +158,15 @@ function nextSlide() {
 document.querySelector("#show-login").addEventListener("click",function(){
     document.querySelector(".popup").classList.add("active");
 });
-document.querySelector(".popup .close-btn").addEventListener("Click",function(){
+document.querySelector(".popup .close-btn").addEventListener("click",function(){
     document.querySelector(".popup").classList.remove("active");
 });
+// Get the modal
+var modal = document.getElementById('id01');
+// ----- When the user clicks anywhere outside of the popup, close it -----
+window.onclick = function(event) {
+    if (event.target == popup) {
+        modal.style.display = "none";
+    }
+}
+
