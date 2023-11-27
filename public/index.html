@@ -37,6 +37,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Sriracha&display=swap" rel="stylesheet">
 
+    <!-- database firabase -->
+    <script>
+      import { initializeApp } from "firebase/app";
+      import { initializeApp } from "firebase/firestore";
+    </script>
+    
+
   </head>
 
   <body>
@@ -155,7 +162,7 @@
                     <a href="forecast.html" class="dropdown-item">สภาพอากาศ</a>
                   </li>
                   <li>
-                    <a href="economy.html" class="dropdown-item">เศรษฐกิจ</a>
+                    <a href="economy.html" class="dropdown-item">เศรษฐกิจและสังคม</a>
                   </li>
                   <li>
                     <a href="entertainment.html" class="dropdown-item">บันเทิง</a>
@@ -254,15 +261,15 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 tn-left">
-              <div class="tn-img">
-                <img src="assets\img\1.png" />
+              <div class="tn-img" style="height: 600px; background-color: white;">
+                <img src="https://scontent.fbkk29-1.fna.fbcdn.net/v/t39.30808-6/404959789_364489396096959_7541806205857700939_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=384alHkmoF0AX9v4ECs&_nc_ht=scontent.fbkk29-1.fna&oh=00_AfCx_BH-1RzQrfXDi7y6nzrr8nu607tVIcQg-PA26C42xA&oe=656960A0" />
                 <div class="tn-content">
                   <div class="tn-content-inner">
                     <a class="tn-date" href=""
                       ><i class="far fa-clock"></i>05-Feb-2023</a
                     >
-                    <a class="tn-title" href=""
-                      >Lorem ipsum dolor sit amet adipiscing elit</a
+                    <a class="tn-title" href="https://www.facebook.com/photo?fbid=364489399430292&set=a.163383506207550" target="_blank"
+                      >นทท. ถ่ายรูปทะเลหมอก ดอยอินทนนท์ อุณหภูมิ 8 องศาเซลเซียส</a
                     >
                   </div>
                 </div>
@@ -272,7 +279,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="tn-img">
-                    <img src="assets\img\1.png" />
+                    <img src="assets\img\4.png" />
                     <div class="tn-content">
                       <div class="tn-content-inner">
                         <a class="tn-date" href=""
@@ -287,7 +294,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="tn-img">
-                    <img src="assets\img\2.png" />
+                    <img src="assets\img\2-e.png" />
                     <div class="tn-content">
                       <div class="tn-content-inner">
                         <a class="tn-date" href=""
@@ -302,7 +309,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="tn-img">
-                    <img src="assets\img\3.png" />
+                    <img src="assets\img\3-e.png" />
                     <div class="tn-content">
                       <div class="tn-content-inner">
                         <a class="tn-date" href=""
@@ -317,7 +324,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="tn-img">
-                    <img src="assets\img\1.png" />
+                    <img src="assets\img\1-e.png" />
                     <div class="tn-content">
                       <div class="tn-content-inner">
                         <a class="tn-date" href=""
@@ -385,15 +392,15 @@
         <article>
           <div class="article-wrapper">
             <figure>
-              <img src="https://picsum.photos/id/1011/800/450" alt="" />
+              <img src="https://scontent.fbkk22-3.fna.fbcdn.net/v/t39.30808-6/400726057_360374579841774_3251767038918110337_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHscLccNQesLwTHjbvtaOH8WPo_iYbtEY5Y-j-Jhu0RjithJp7yeamFGW7VRkoTVgJ9krwBjc8vs4zh0OggNOse&_nc_ohc=JGPC11nQ32IAX9-riA2&_nc_ht=scontent.fbkk22-3.fna&oh=00_AfDzXMtExGGQGNaZr0jK8CEgGo3GZ52EiA-kIKmTv53YLQ&oe=656488B1" alt="" />
             </figure>
             <div class="article-body">
-              <h2>This is some title</h2>
+              <h2>เผยความคืบหน้าช่วย ตัวประกันไทย</h2>
               <p>
-                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                เผยความคืบหน้าช่วย ตัวประกันไทย คาด ฮามาส อาจปล่อยตัวเร็วๆ นี้ หากมีการหยุดยิงชั่วคราว ล่าสุด ตัวประกันอยู่ในพื้นที่ปลอดภัยแล้ว
               </p>
-              <a href="#" class="read-more">
-                Read more <span class="sr-only">about this is some title</span>
+              <a href="https://www.facebook.com/Newsnetwork.A/posts/pfbid02eTZF8PuDxZfh4QAZaQBUKE9e7nhJxVtz6DJ26mMB9zf3cjsKFTGizrH67X8eULUFl" class="read-more" target="_blank">
+                อ่านต่อ <span class="sr-only">about this is some title</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
@@ -405,15 +412,15 @@
       
           <div class="article-wrapper">
             <figure>
-              <img src="https://picsum.photos/id/1005/800/450" alt="" />
+              <img src="https://scontent.fbkk22-3.fna.fbcdn.net/v/t39.30808-6/400154210_357689186776980_2715791832435261389_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF2BDQjOq059PRk-s2rYxv6-JzHYx268GH4nMdjHbrwYdLw4IcH-JPB-fIjsLB7hT8JZgAKDXmXJHkkemDP4Gs4&_nc_ohc=uOciztgfXL8AX9iPzVC&_nc_ht=scontent.fbkk22-3.fna&oh=00_AfDPvzY24C9TLweTBxAMx_X5wyygS1GAPDIHdbeArs8DSA&oe=65646598" alt="" />
             </figure>
             <div class="article-body">
-              <h2>This is some title</h2>
+              <h2>นายกฯ ยืนยันใช้จ่าย ดิจิทัลวอลเล็ต 10,000 บาท</h2>
               <p>
-                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                นายกฯ ยืนยันใช้จ่าย ดิจิทัลวอลเล็ต 10,000 บาท ผ่าน ‘เป๋าตัง’ ชี้ มีความพร้อม มีร้านค้าคุ้นเคยกว่า 1.8 ล้านร้านค้า ประชาชนเริ่มใช้ได้ พ.ค.ปีหน้า
               </p>
-              <a href="#" class="read-more">
-                Read more <span class="sr-only">about this is some title</span>
+              <a href="https://www.facebook.com/Newsnetwork.A/posts/pfbid0RpDF4hkmPRDLpjeCkWwAqkgR21x18PsKNUpk68f2NvPKFSZQ4WMStEGqVGhNKUXEl" class="read-more" target="_blank">
+                อ่านต่อ <span class="sr-only">about this is some title</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
@@ -425,15 +432,15 @@
       
           <div class="article-wrapper">
             <figure>
-              <img src="https://picsum.photos/id/103/800/450" alt="" />
+              <img src="https://scontent.fbkk22-4.fna.fbcdn.net/v/t39.30808-6/400508380_357167886829110_6305475904873159865_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF-lyCxhH351LAi9RFDn1HtcT9bsqCVp0RxP1uyoJWnRD69OzB4A6AlPsZmvX-Rgqhd23PBb53WAHLXb2f6dvyB&_nc_ohc=53v8Eqf67_MAX-rHQog&_nc_ht=scontent.fbkk22-4.fna&oh=00_AfA4NoFfJIpFZvI7cSqQ7zfwxqpO8__lDRnI0QVkMKEOyQ&oe=6563E0E4" alt="" />
             </figure>
             <div class="article-body">
-              <h2>This is some title</h2>
+              <h2>แรงงานไทย เร่งยื่นขอรับสิทธิประโยชน์กองทุนฯ</h2>
               <p>
-                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                พิพัฒน์แนะ แรงงานไทย เร่งยื่นขอรับสิทธิประโยชน์กองทุนฯ เผยเยียวยาตามสิทธิฯ 2,739 ราย แล้วกว่า 41 ล้านบาท เผยแรงงานกลับถึงไทยแล้วกว่า 8 พันคน
               </p>
-              <a href="#" class="read-more">
-                Read more <span class="sr-only">about this is some title</span>
+              <a href="https://www.facebook.com/Newsnetwork.A/posts/pfbid06eEZM93WjFEWKRJa6NzCT4Uhv27NdNcW7gfyLbFsV6Rjs6VUZtUn27LB74Tif5FLl" class="read-more" target="_blank">
+                อ่านต่อ <span class="sr-only">about this is some title</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
@@ -444,21 +451,23 @@
         </section>
       </div>
 
-      <div class="poli-id-fc">
-        <h1>เศรษฐกิจ</h1>
+      <div class="eco-id-fc">
+        <h1>เศรษฐกิจและสังคม</h1>
         <section class="articles">
         <article>
           <div class="article-wrapper">
             <figure>
-              <img src="https://picsum.photos/id/1011/800/450" alt="" />
+              <img src="https://scontent.fbkk22-7.fna.fbcdn.net/v/t39.30808-6/405297004_364488756097023_5734813496610330026_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=b9J0Z0G9KGQAX8zffRP&_nc_oc=AQmZH8JntncRGRnDEqVGhqicLdHsHheVAd2kar3geabA4xTsLAsP0Omq0IGX-32ZEDYx6VwSFBOI8dLiUl_DkXeF&_nc_ht=scontent.fbkk22-7.fna&oh=00_AfCUq_ktbizzVyQiFq_OpFlvecMMXteOj7Lblrjk2x0wzQ&oe=6564DEB9" alt="" />
             </figure>
             <div class="article-body">
-              <h2>This is some title</h2>
+              <h2>ราคาทอง</h2>
               <p>
-                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                 วันพฤหัสบดีที่ 23 พฤศจิกายน 2566 ครั้งที่ 1 ลง 100  บาท 
+                  - ทองคำแท่ง รับซื้อบาทละ 33,150 บาท ขายออกบาทละ 33,250 บาท
+                  - ทองรูปพรรณ รับซื้อบาทละ 32,548.52 บาท ขายออกบาทละ 33,750 บาท
               </p>
-              <a href="#" class="read-more">
-                Read more <span class="sr-only">about this is some title</span>
+              <a href="https://www.facebook.com/Newsnetwork.A/posts/pfbid07xgVK1MkavrXbg1WF3i2Z2CNvkdYpXbKKsoX4Z2WojwYWUXwWWxA7Qw3iQ94AVgzl" class="read-more" target="_blank">
+                อ่านต่อ <span class="sr-only">about this is some title</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
@@ -470,15 +479,16 @@
       
           <div class="article-wrapper">
             <figure>
-              <img src="https://picsum.photos/id/1005/800/450" alt="" />
+              <img src="https://scontent.fbkk29-7.fna.fbcdn.net/v/t39.30808-6/404416415_364081652804400_3862679849932756258_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=_KXctGbPs0gAX92ItOe&_nc_ht=scontent.fbkk29-7.fna&oh=00_AfB_RZCJL9mE013tmErXfeoJhlEA5s8BFvdOjndXOmuYLw&oe=65697861" alt="" />
             </figure>
             <div class="article-body">
-              <h2>This is some title</h2>
+              <h2>แบงก์กาโม่ลายการ์ตูน เติมเงินได้เฉย</h2>
               <p>
-                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                เมื่อวันที่ 22 พฤศจิกายน 2566 เพจ Survive – สายไหมต้องรอด 
+                โพสต์คลิปเตือนภัยมิจฉาชีพ ใช้แบงก์กาโม่เติมเงินตู้เติมเงินออนไลน์แบบใช้เหรียญ และธนบัตร 
               </p>
-              <a href="#" class="read-more">
-                Read more <span class="sr-only">about this is some title</span>
+              <a href="https://www.facebook.com/Newsnetwork.A/posts/pfbid02rMmJTFpsFfcw3uPkxcGdNdtoayEz7m18PKx2WcwVeRJ2D5BWHZJQZaHDsm9uvjrYl" class="read-more" target="_blank">
+                อ่านต่อ <span class="sr-only">about this is some title</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
@@ -490,15 +500,15 @@
       
           <div class="article-wrapper">
             <figure>
-              <img src="https://picsum.photos/id/103/800/450" alt="" />
+              <img src="https://scontent.fbkk22-4.fna.fbcdn.net/v/t39.30808-6/404932323_364072282805337_326553625842613693_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=IVy_2PqTRFoAX-pem87&_nc_ht=scontent.fbkk22-4.fna&oh=00_AfAt-bOX4v_lsIen2FnAl1bQnEKBoC6ScyiIazBCsKms_g&oe=6564C047" alt="" />
             </figure>
             <div class="article-body">
-              <h2>This is some title</h2>
+              <h2>เตือนภัย‼️ เติมน้ำมันปั๊มหลอด เจอ “ดีเซลผสมน้ำ”</h2>
               <p>
-                Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                ปั๊มหลอดแห่งหนึ่ง ริมถนนสายสุวรรณศร (33) หนองปลาแขยง จากนั้นเครื่องยนต์มีปัญหาติด ๆ ดับ ๆ ตลอดทาง พอตรวจสอบในถังจึงพบว่ามีน้ำผสมอยู่เป็นจำนวนมาก คาดว่าเกิดจากสาเหตุนี้
               </p>
-              <a href="#" class="read-more">
-                Read more <span class="sr-only">about this is some title</span>
+              <a href="https://www.facebook.com/Newsnetwork.A/posts/pfbid025xvC4xSV5jRc7oLJcVajyMgExJdRDgLnJDJdUQ172mdCPZL5uSEHiVtFRvpyMLqjl" class="read-more" target="_blank">
+                อ่านต่อ <span class="sr-only">about this is some title</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
@@ -509,12 +519,81 @@
         </section>
       </div>
       
-      <div class="poli-id-fc">
+      <div class="ent-id-fc">
         <h1>บันเทิง</h1>
         <section class="articles">
         <article>
           <div class="article-wrapper">
             <figure>
+              <img src="http://looktungnetwork.tatointeractive.com/ltn/admin/farms/k/g/x/2023112314302538_small.png" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>กุศลหนุนบุญนำ “เต๋า ภูศิลป์” </h2>
+              <p>
+                หน้าหนาวปลายปีแบบนี้ ถือเป็นช่วงหน้างานของศิลปินหลายๆคน หนึ่งในนั้นต้องหนีไม่พ้น 
+                “เต๋า ภูศิลป์” นักร้องหนุ่มหน้ามน เจ้าของผลงานเพลงดังอย่าง อ้อมกอดเขมราฐ, 
+                ก้อนขี้ฟ้า , มนต์รักพระธาตุพนม, ที่ฟังแล้วให้ฟิลเหมือนได้สัมผัสกับลมหนาวริมฝั่งโขง
+              </p>
+              <a href="http://looktung.net/gossip/1022" class="read-more" target="_blank">
+                อ่านต่อ <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="http://looktungnetwork.tatointeractive.com/ltn/admin/farms/n/o/y/2023111511084489_small.png" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>“เบิดแก้ว” เพลงใหม่ “บอส ธีรพงษ์” เนื้อหาทัชใจคนฟังทั้งประเทศ</h2>
+              <p>
+                “บอส ธีรพงษ์” ที่มักจะปล่อยเพลงเศร้าเคล้าน้ำตา มาให้แฟนๆ ได้ฟังกันอย่างต่อเนื่อง ล่าสุดได้เวลาปล่อยเพลงใหม่ “เบิดแก้ว”
+              </p>
+              <a href="http://looktung.net/gossip/1021" class="read-more" target="_blank">
+                อ่านต่อ <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+      
+          <div class="article-wrapper">
+            <figure>
+              <img src="http://looktungnetwork.tatointeractive.com/ltn/admin/farms/w/k/j/2023111511072633_small.png" alt="" />
+            </figure>
+            <div class="article-body">
+              <h2>“ตรี ชัยณรงค์” จัด “คนที่ฟ้าพามาส่ง” สุดฮีลใจคู่ขนานกับ “ขอให้ฟ้าซุกใส่”</h2>
+              <p>
+                แฟนๆหลายคนคงได้มีโอกาสชมและฟังเพลง "ขอให้ฟ้าซุกใส่" 
+                ของลูกทุ่งหมอลำสาวใช่ทุกสำเนียง "เวียง นฤมล" ไปแล้ว 
+                จนยอดวิวในยูทูบทั้งสองเวอร์ชั่นก็ทะลุ 8 ล้านวิวไปเรียบร้อย 
+              </p>
+              <a href="http://looktung.net/gossip/1020" class="read-more" target="_blank">
+                อ่านต่อ <span class="sr-only">about this is some title</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+        </section>
+      </div>
+      
+      <!-- <div class="knl-id-fc">
+        <h1>ความรู้เกี่ยวกับภัยพิบัติ</h1>
+        <section class="articles">
+        <article>
+          <div class="article-wrapper">
+            <figure>
               <img src="https://picsum.photos/id/1011/800/450" alt="" />
             </figure>
             <div class="article-body">
@@ -572,8 +651,7 @@
           </div>
         </article>
         </section>
-      </div>
-      
+      </div> -->
       
 
     </div>
@@ -603,7 +681,7 @@
                 <li><a href="index.html">ข่าวเด่น</a></li>
                 <li><a href="forecast.html">พยากรณ์อากาศ</a></li>
                 <li><a href="politics.html">การเมือง</a></li>
-                <li><a href="economy.html">เศรษฐกิจ</a></li>
+                <li><a href="economy.html">เศรษฐกิจและสังคม</a></li>
                 <li><a href="entertainment.html">บันเทิง</a></li>
                 <li><a href="knowledge.html">ความรู้เกี่ยวกับภัยพิบัติ</a></li>
               </ul>
@@ -717,7 +795,28 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+      import { getAnalytics } from "firebase/analytics";
+      import { express } from "express";
+      import { BodyParser } from "body-parser";
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyC8d2OjXgknpERywQOC-i-DvtARVQ58-JE",
+        authDomain: "ltnnews-demo-6d3a3.firebaseapp.com",
+        projectId: "ltnnews-demo-6d3a3",
+        storageBucket: "ltnnews-demo-6d3a3.appspot.com",
+        messagingSenderId: "852276943187",
+        appId: "1:852276943187:web:276641c464ad20596d29a6",
+        measurementId: "G-114Z1ZVWVJ"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const db = firebase.firestore();
+    </script>
   </body>
 </html>
-
-<!-- <a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-chevron-up"></i></a> -->
